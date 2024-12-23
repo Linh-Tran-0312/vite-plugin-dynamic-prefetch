@@ -1,0 +1,58 @@
+{
+  "name": "vite-plugin-dynamic-prefetch",
+  "version": "0.1.0",
+  "description": "\"A vite plugin supports prefetch for dynamic imports\"",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "author": {
+    "name": "LinhTran",
+    "email": "linhtran.atwork@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "dynamic-import",
+    "prefetch"
+  ],
+  "homepage": "https://github.com/Linh-Tran-0312/vite-plugin-dynamic-prefetch#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Linh-Tran-0312/vite-plugin-dynamic-prefetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Linh-Tran-0312/vite-plugin-dynamic-prefetch/issues"
+  },
+  "files": [
+    "./dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run bundle",
+    "bundle": "tsup-node src/index.ts --dts --format esm,cjs"
+  },
+  "devDependencies": {
+    "@alloc/fast-rimraf": "^1.0.8",
+    "@types/node": "^22.10.2",
+    "magic-string": "^0.30.17",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
+    "vite": "^5.4.11"
+  },
+  "peerDependencies": {
+    "vite": "*"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    }
+  }
+}
