@@ -33,8 +33,9 @@ const ComponentA = lazy(() => import(/* vitePrefetch: true */ 'path/to/Component
 
 ```
 ## Limitations
-Current version:
+The current version has the following limitations:
+- Compatible only with Vite 4.0.0 and above.
 - Does not support variable import paths.
-- Only works for bundled code (not in development mode)
+- Works for bundled code (not in development mode).
 ## License
 MIT
