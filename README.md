@@ -24,7 +24,7 @@ export default defineConfig({
   plugins: [dynamicPrefetch()],
 })
 ```
-Add the hint comment /* vitePrefetch: true */ right before the module path in the import statement:
+Add the hint comment `/* vitePrefetch: true */` right before the module path in the import statement:
 ```js
 
 import { lazy } from 'react';
