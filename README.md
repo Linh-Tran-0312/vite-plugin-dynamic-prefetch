@@ -1,5 +1,6 @@
 # vite-plugin-dynamic-prefetch
 ![License](https://img.shields.io/badge/license-MIT-green)
+<img src='https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg' alt='Awesome'>
 
 `vite-plugin-dynamic-prefetch` is a Vite plugin that enhances the performance of web applications by supporting prefetching for dynamic imports **at runtime**. This plugin allows developers to optimize loading times by prefetching resources that are likely to be needed in the near future.
 
